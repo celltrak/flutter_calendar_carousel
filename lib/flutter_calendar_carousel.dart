@@ -439,7 +439,7 @@ class _CalendarState<T extends EventInterface>
                 isThisMonthDay),
             child: Text(
               '${now.day}',
-              semanticsLabel: now.day.toString(),
+              semanticsLabel: "${now.month.toString()}/${now.day.toString()}",
               style: getDayStyle(
                   isSelectable,
                   index,
